@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Case Studies & Insights - Exploring product management, user experience, and the intersection of technology with human needs">
+    <meta name="keywords" content="product management, case studies, insights, technology, user experience">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Product Case Studies & Insights">
+    <meta property="og:description" content="Exploring product management, user experience, and the intersection of technology with human needs">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/MyPortfolio/blog.html">
+    
+    <title>Product Case Studies & Insights - Venkatesh Murthy N S</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .blog-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 120px 0 var(--spacing-3xl);
+            text-align: center;
+        }
+        
+        .blog-header h1 {
+            color: white;
+            font-size: var(--font-size-4xl);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .blog-header .subtitle {
+            font-size: var(--font-size-xl);
+            opacity: 0.9;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .blog-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: var(--spacing-3xl) var(--spacing-lg);
+        }
+        
+        .blog-intro {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+            font-size: var(--font-size-lg);
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-3xl);
+        }
+        
+        .blog-post-card {
+            background-color: var(--background-primary);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+            transition: all var(--transition-normal);
+            border: 1px solid var(--border-color);
+        }
+        
+        .blog-post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-large);
+        }
+        
+        .blog-post-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .blog-post-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-normal);
+        }
+        
+        .blog-post-card:hover .blog-post-image img {
+            transform: scale(1.05);
+        }
+        
+        .blog-post-content {
+            padding: var(--spacing-lg);
+        }
+        
+        .blog-post-meta {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+            font-size: var(--font-size-sm);
+            color: var(--text-light);
+        }
+        
+        .blog-post-meta i {
+            color: var(--primary-color);
+        }
+        
+        .blog-post-title {
+            font-size: var(--font-size-xl);
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+        
+        .blog-post-excerpt {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .read-more-btn {
+            color: var(--primary-color);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-xs);
+            transition: color var(--transition-fast);
+        }
+        
+        .read-more-btn:hover {
+            color: var(--primary-dark);
+        }
+        
+        .blog-categories {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-3xl);
+            flex-wrap: wrap;
+        }
+        
+        .category-tag {
+            background-color: var(--background-accent);
+            color: var(--text-primary);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            border: 1px solid var(--border-color);
+            transition: all var(--transition-fast);
+            cursor: pointer;
+        }
+        
+        .category-tag:hover,
+        .category-tag.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            color: white;
+            margin-bottom: var(--spacing-xl);
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        @media (max-width: 768px) {
+            .blog-header h1 {
+                font-size: var(--font-size-3xl);
+            }
+            
+            .blog-content {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+            
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .blog-categories {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/profile-photo.jpg" alt="Profile Photo" class="nav-photo">
+                <span class="nav-name">Venkatesh Murthy N S</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Portfolio
+            </a>
+            <h1>Product Case Studies & Insights</h1>
+            <p class="subtitle">Exploring the intersection of empathy, data, and technology in product management</p>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <div class="blog-content">
+        <div class="blog-intro">
+            <p>Welcome to my collection of product case studies and insights. Here, I share detailed analyses of product challenges, solutions, and lessons learned from my experience across AI Safety Tech, Healthcare, Sports Technology, and IoT Telematics. Each post explores how empathy, data, and attention to detail come together to create products that truly serve users.</p>
+        </div>
+
+        <div class="blog-categories">
+            <span class="category-tag active" data-category="all">All Posts</span>
+            <span class="category-tag" data-category="case-studies">Case Studies</span>
+            <span class="category-tag" data-category="product-strategy">Product Strategy</span>
+            <span class="category-tag" data-category="ai-safety">AI Safety</span>
+            <span class="category-tag" data-category="healthcare">Healthcare</span>
+            <span class="category-tag" data-category="sports-tech">Sports Tech</span>
+            <span class="category-tag" data-category="iot">IoT</span>
+        </div>
+
+        <div class="blog-grid">
+            <article class="blog-post-card" data-categories="case-studies,ai-safety">
+                <div class="blog-post-image">
+                    <img src="assets/blog-1-placeholder.jpg" alt="The Art of Product Storytelling">
+                </div>
+                <div class="blog-post-content">
+                    <div class="blog-post-meta">
+                        <span><i class="fas fa-calendar"></i> March 15, 2024</span>
+                        <span><i class="fas fa-clock"></i> 8 min read</span>
+                    </div>
+                    <h3 class="blog-post-title">The Art of Product Storytelling</h3>
+                    <p class="blog-post-excerpt">How narrative thinking transforms product development from feature delivery to meaningful user experiences. Explore how storytelling principles can guide product decisions and create more engaging, user-centered solutions.</p>
+                    <a href="blog/product-storytelling.html" class="read-more-btn">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-post-card" data-categories="case-studies,ai-safety">
+                <div class="blog-post-image">
+                    <img src="assets/blog-2-placeholder.jpg" alt="Building AI Products with Human Values">
+                </div>
+                <div class="blog-post-content">
+                    <div class="blog-post-meta">
+                        <span><i class="fas fa-calendar"></i> February 28, 2024</span>
+                        <span><i class="fas fa-clock"></i> 12 min read</span>
+                    </div>
+                    <h3 class="blog-post-title">Building AI Products with Human Values</h3>
+                    <p class="blog-post-excerpt">Ensuring AI safety through user-centered design. A deep dive into how we can build AI products that not only perform well but also align with human values and ethical considerations.</p>
+                    <a href="blog/ai-human-values.html" class="read-more-btn">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-post-card" data-categories="case-studies,healthcare">
+                <div class="blog-post-image">
+                    <img src="assets/blog-3-placeholder.jpg" alt="Designing for Healthcare Complexity">
+                </div>
+                <div class="blog-post-content">
+                    <div class="blog-post-meta">
+                        <span><i class="fas fa-calendar"></i> February 10, 2024</span>
+                        <span><i class="fas fa-clock"></i> 10 min read</span>
+                    </div>
+                    <h3 class="blog-post-title">Designing for Healthcare Complexity</h3>
+                    <p class="blog-post-excerpt">Navigating the unique challenges of healthcare product design. Learn how to balance regulatory requirements, user needs, and technical constraints to create solutions that truly improve patient care.</p>
+                    <a href="blog/healthcare-complexity.html" class="read-more-btn">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-post-card" data-categories="product-strategy,sports-tech">
+                <div class="blog-post-image">
+                    <img src="assets/blog-4-placeholder.jpg" alt="Real-time Analytics in Sports">
+                </div>
+                <div class="blog-post-content">
+                    <div class="blog-post-meta">
+                        <span><i class="fas fa-calendar"></i> January 25, 2024</span>
+                        <span><i class="fas fa-clock"></i> 9 min read</span>
+                    </div>
+                    <h3 class="blog-post-title">Real-time Analytics in Sports</h3>
+                    <p class="blog-post-excerpt">How to make complex performance data actionable for coaches and athletes. Discover the principles behind creating analytics tools that enhance rather than complicate decision-making in high-pressure sports environments.</p>
+                    <a href="blog/sports-analytics.html" class="read-more-btn">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-post-card" data-categories="case-studies,iot">
+                <div class="blog-post-image">
+                    <img src="assets/blog-5-placeholder.jpg" alt="IoT Product Management Lessons">
+                </div>
+                <div class="blog-post-content">
+                    <div class="blog-post-meta">
+                        <span><i class="fas fa-calendar"></i> January 12, 2024</span>
+                        <span><i class="fas fa-clock"></i> 11 min read</span>
+                    </div>
+                    <h3 class="blog-post-title">IoT Product Management Lessons</h3>
+                    <p class="blog-post-excerpt">Key insights from building IoT products at scale. Learn about the unique challenges of IoT product management, from hardware-software integration to data quality and user experience considerations.</p>
+                    <a href="blog/iot-lessons.html" class="read-more-btn">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <article class="blog-post-card" data-categories="product-strategy">
+                <div class="blog-post-image">
+                    <img src="assets/blog-6-placeholder.jpg" alt="The Empathy-Data Balance">
+                </div>
+                <div class="blog-post-content">
+                    <div class="blog-post-meta">
+                        <span><i class="fas fa-calendar"></i> December 28, 2023</span>
+                        <span><i class="fas fa-clock"></i> 7 min read</span>
+                    </div>
+                    <h3 class="blog-post-title">The Empathy-Data Balance</h3>
+                    <p class="blog-post-excerpt">Finding the sweet spot between human insight and data-driven decisions. Explore how to balance qualitative user research with quantitative analytics to make better product decisions.</p>
+                    <a href="blog/empathy-data-balance.html" class="read-more-btn">
+                        Read More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Venkatesh Murthy N S. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Blog category filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryTags = document.querySelectorAll('.category-tag');
+            const blogPosts = document.querySelectorAll('.blog-post-card');
+            
+            categoryTags.forEach(tag => {
+                tag.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active category
+                    categoryTags.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter posts
+                    blogPosts.forEach(post => {
+                        const postCategories = post.getAttribute('data-categories').split(',');
+                        if (category === 'all' || postCategories.includes(category)) {
+                            post.style.display = 'block';
+                            post.style.animation = 'fadeInUp 0.5s ease';
+                        } else {
+                            post.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

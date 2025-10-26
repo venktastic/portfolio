@@ -1,0 +1,16 @@
+<!-- Placeholder image files -->
+<!-- Replace these with actual images -->
+<!-- 
+Required images:
+- profile-photo-placeholder.jpg (40x40px for nav, 300x300px for hero)
+- hero-photo-placeholder.jpg (300x300px, circular crop)
+- project-1-placeholder.jpg through project-5-placeholder.jpg (400x200px)
+- blog-1-placeholder.jpg through blog-6-placeholder.jpg (400x200px)
+- project-*-detail-placeholder.jpg (800x400px for case study pages)
+- blog-*-detail-placeholder.jpg (800x400px for blog posts)
+
+Image specifications:
+- Format: JPG or PNG
+- Optimize for web (use TinyPNG or similar)
+- Include proper alt text for accessibility
+-->

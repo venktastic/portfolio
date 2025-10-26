@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IoT Fleet Management System Case Study - Reducing fuel consumption by 20% and maintenance costs by 35%">
+    <meta name="keywords" content="IoT, telematics, fleet management, predictive analytics, product management, case study">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="IoT Fleet Management System - Case Study">
+    <meta property="og:description" content="IoT-based fleet management solution reducing fuel consumption by 20% and maintenance costs by 35%">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yourusername.github.io/MyPortfolio/projects/iot-fleet-management.html">
+    
+    <title>IoT Fleet Management System - Venkatesh Murthy N S</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .project-header {
+            background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+            color: white;
+            padding: 120px 0 var(--spacing-3xl);
+            text-align: center;
+        }
+        
+        .project-header h1 {
+            color: white;
+            font-size: var(--font-size-4xl);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .project-header .subtitle {
+            font-size: var(--font-size-xl);
+            opacity: 0.9;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-xl);
+            flex-wrap: wrap;
+            margin-top: var(--spacing-xl);
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--radius-md);
+        }
+        
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-3xl) var(--spacing-lg);
+        }
+        
+        .content-section {
+            margin-bottom: var(--spacing-3xl);
+        }
+        
+        .content-section h2 {
+            color: #8b5cf6;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .content-section h3 {
+            color: var(--text-primary);
+            margin-top: var(--spacing-xl);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .highlight-box {
+            background-color: var(--background-accent);
+            border-left: 4px solid #8b5cf6;
+            padding: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            border-radius: var(--radius-md);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: var(--spacing-lg);
+            background-color: var(--background-secondary);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-light);
+        }
+        
+        .stat-number {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            color: #8b5cf6;
+            display: block;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: var(--font-size-sm);
+            margin-top: var(--spacing-xs);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .tech-tag {
+            background-color: #8b5cf6;
+            color: white;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            font-size: var(--font-size-xs);
+            font-weight: 500;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            color: white;
+            margin-bottom: var(--spacing-xl);
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            margin: var(--spacing-lg) 0;
+            box-shadow: var(--shadow-medium);
+        }
+        
+        @media (max-width: 768px) {
+            .project-header h1 {
+                font-size: var(--font-size-3xl);
+            }
+            
+            .project-meta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .project-content {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../assets/profile-photo.jpg" alt="Profile Photo" class="nav-photo">
+                <span class="nav-name">Venkatesh Murthy N S</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Projects
+            </a>
+            <h1>IoT Fleet Management System</h1>
+            <p class="subtitle">IoT-based fleet management solution reducing fuel consumption by 20% and maintenance costs by 35%</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>2020 - 2021</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <span>Product Manager</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-industry"></i>
+                    <span>IoT Telematics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <div class="project-content">
+        <img src="../assets/project-4-detail-placeholder.jpg" alt="IoT Fleet Management Dashboard" class="project-image">
+        
+        <div class="content-section">
+            <h2>The Challenge</h2>
+            <p>Fleet management companies were struggling with rising operational costs, unpredictable maintenance needs, and inefficient route planning. Traditional fleet management approaches relied on manual processes and reactive maintenance, leading to increased downtime, higher fuel costs, and poor resource utilization.</p>
+            
+            <p>The primary challenges included:</p>
+            <ul>
+                <li><strong>High Fuel Costs:</strong> Inefficient routing and driving behaviors leading to excessive fuel consumption</li>
+                <li><strong>Unpredictable Maintenance:</strong> Reactive maintenance approach causing unexpected breakdowns and downtime</li>
+                <li><strong>Poor Visibility:</strong> Limited real-time visibility into fleet operations and driver behavior</li>
+                <li><strong>Manual Processes:</strong> Time-consuming manual tracking and reporting of fleet activities</li>
+                <li><strong>Driver Safety:</strong> Lack of real-time monitoring leading to safety incidents and violations</li>
+                <li><strong>Compliance Issues:</strong> Difficulty maintaining regulatory compliance across different jurisdictions</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <strong>Key Insight:</strong> Fleet management needed to evolve from reactive monitoring to predictive optimization, using IoT data to anticipate needs and optimize operations proactively.
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>The Solution</h2>
+            <p>I developed a comprehensive IoT-based fleet management system that transformed fleet operations through real-time monitoring, predictive analytics, and intelligent optimization. The platform integrated hardware sensors, cloud computing, and machine learning to provide actionable insights for fleet operators.</p>
+            
+            <h3>Core Features</h3>
+            <ul>
+                <li><strong>Real-time Vehicle Monitoring:</strong> Continuous tracking of vehicle location, speed, fuel consumption, and engine health</li>
+                <li><strong>Predictive Maintenance:</strong> AI-powered predictions for maintenance needs based on vehicle usage patterns</li>
+                <li><strong>Route Optimization:</strong> Intelligent routing algorithms considering traffic, weather, and vehicle capacity</li>
+                <li><strong>Driver Behavior Analysis:</strong> Monitoring and coaching for fuel-efficient and safe driving practices</li>
+                <li><strong>Fuel Management:</strong> Real-time fuel tracking and consumption optimization</li>
+                <li><strong>Compliance Monitoring:</strong> Automated tracking of regulatory requirements and reporting</li>
+            </ul>
+            
+            <h3>Technical Architecture</h3>
+            <ul>
+                <li><strong>IoT Sensors:</strong> GPS, accelerometer, fuel level, engine diagnostics, and environmental sensors</li>
+                <li><strong>Edge Computing:</strong> On-vehicle processing for real-time decision making</li>
+                <li><strong>Cloud Platform:</strong> Scalable data processing and analytics infrastructure</li>
+                <li><strong>Machine Learning:</strong> Predictive models for maintenance, routing, and optimization</li>
+                <li><strong>Mobile Applications:</strong> Driver and fleet manager mobile interfaces</li>
+            </ul>
+            
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">InfluxDB</span>
+                <span class="tech-tag">MQTT</span>
+                <span class="tech-tag">AWS IoT</span>
+                <span class="tech-tag">React Native</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>The Process</h2>
+            <h3>Research & Discovery</h3>
+            <p>I conducted extensive research to understand fleet management challenges:</p>
+            <ul>
+                <li>Interviewed 60+ fleet managers, drivers, and maintenance staff</li>
+                <li>Analyzed existing fleet management solutions and their limitations</li>
+                <li>Studied IoT technology capabilities and constraints</li>
+                <li>Researched regulatory requirements across different markets</li>
+            </ul>
+            
+            <h3>Product Strategy & Design</h3>
+            <p>Based on research, I developed a comprehensive product strategy:</p>
+            <ul>
+                <li><strong>Hardware Integration:</strong> Designed IoT sensor suite for comprehensive vehicle monitoring</li>
+                <li><strong>Data Architecture:</strong> Built scalable data processing pipeline for real-time analytics</li>
+                <li><strong>User Experience:</strong> Created intuitive interfaces for different user roles</li>
+                <li><strong>Predictive Capabilities:</strong> Developed ML models for maintenance and optimization</li>
+            </ul>
+            
+            <h3>Implementation & Deployment</h3>
+            <p>The implementation followed a phased approach:</p>
+            <ul>
+                <li><strong>Phase 1:</strong> Basic tracking and monitoring capabilities</li>
+                <li><strong>Phase 2:</strong> Predictive maintenance and route optimization</li>
+                <li><strong>Phase 3:</strong> Advanced analytics and AI-powered insights</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Results & Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">20%</span>
+                    <span class="stat-label">Reduction in Fuel Consumption</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">35%</span>
+                    <span class="stat-label">Reduction in Maintenance Costs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50%</span>
+                    <span class="stat-label">Reduction in Downtime</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">25%</span>
+                    <span class="stat-label">Improvement in Driver Safety</span>
+                </div>
+            </div>
+            
+            <h3>Operational Impact</h3>
+            <ul>
+                <li><strong>Cost Savings:</strong> $3M annual savings through reduced fuel consumption and maintenance</li>
+                <li><strong>Efficiency Gains:</strong> 30% improvement in fleet utilization rates</li>
+                <li><strong>Safety Improvements:</strong> 25% reduction in safety incidents and violations</li>
+                <li><strong>Compliance:</strong> 100% compliance with regulatory requirements</li>
+            </ul>
+            
+            <h3>Business Impact</h3>
+            <ul>
+                <li><strong>Customer Satisfaction:</strong> 95% customer satisfaction with the platform</li>
+                <li><strong>Market Position:</strong> Established company as leader in IoT fleet management</li>
+                <li><strong>Revenue Growth:</strong> 150% increase in fleet management revenue</li>
+                <li><strong>Scalability:</strong> Platform successfully scaled to manage 50,000+ vehicles</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <strong>Key Success Factor:</strong> The platform's success was driven by combining IoT hardware innovation with intelligent software, creating a comprehensive solution that addressed both immediate operational needs and long-term optimization goals.
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Lessons Learned</h2>
+            <p>This project taught me valuable lessons about IoT product management:</p>
+            <ul>
+                <li><strong>Hardware-Software Integration:</strong> IoT products require seamless integration between hardware and software components</li>
+                <li><strong>Data Quality Matters:</strong> The value of IoT solutions depends heavily on data quality and reliability</li>
+                <li><strong>Scalability is Critical:</strong> IoT solutions must be designed to scale from day one</li>
+                <li><strong>User Experience:</strong> Complex IoT data must be presented in simple, actionable formats</li>
+                <li><strong>Predictive Value:</strong> The real value of IoT comes from predictive capabilities, not just monitoring</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Venkatesh Murthy N S. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

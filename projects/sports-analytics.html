@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sports Performance Analytics Case Study - Real-time analytics platform improving team performance by 25%">
+    <meta name="keywords" content="sports technology, analytics, performance, product management, case study">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Sports Performance Analytics - Case Study">
+    <meta property="og:description" content="Real-time sports analytics platform improving team performance by 25%">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yourusername.github.io/MyPortfolio/projects/sports-analytics.html">
+    
+    <title>Sports Performance Analytics - Venkatesh Murthy N S</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .project-header {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            padding: 120px 0 var(--spacing-3xl);
+            text-align: center;
+        }
+        
+        .project-header h1 {
+            color: white;
+            font-size: var(--font-size-4xl);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .project-header .subtitle {
+            font-size: var(--font-size-xl);
+            opacity: 0.9;
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        .project-meta {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-xl);
+            flex-wrap: wrap;
+            margin-top: var(--spacing-xl);
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--radius-md);
+        }
+        
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--spacing-3xl) var(--spacing-lg);
+        }
+        
+        .content-section {
+            margin-bottom: var(--spacing-3xl);
+        }
+        
+        .content-section h2 {
+            color: #f59e0b;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .content-section h3 {
+            color: var(--text-primary);
+            margin-top: var(--spacing-xl);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .highlight-box {
+            background-color: var(--background-accent);
+            border-left: 4px solid #f59e0b;
+            padding: var(--spacing-lg);
+            margin: var(--spacing-lg) 0;
+            border-radius: var(--radius-md);
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-lg);
+            margin: var(--spacing-xl) 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: var(--spacing-lg);
+            background-color: var(--background-secondary);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-light);
+        }
+        
+        .stat-number {
+            font-size: var(--font-size-3xl);
+            font-weight: 700;
+            color: #f59e0b;
+            display: block;
+        }
+        
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: var(--font-size-sm);
+            margin-top: var(--spacing-xs);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .tech-tag {
+            background-color: #f59e0b;
+            color: white;
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--radius-sm);
+            font-size: var(--font-size-xs);
+            font-weight: 500;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            color: white;
+            margin-bottom: var(--spacing-xl);
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            margin: var(--spacing-lg) 0;
+            box-shadow: var(--shadow-medium);
+        }
+        
+        @media (max-width: 768px) {
+            .project-header h1 {
+                font-size: var(--font-size-3xl);
+            }
+            
+            .project-meta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .project-content {
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="../assets/profile-photo.jpg" alt="Profile Photo" class="nav-photo">
+                <span class="nav-name">Venkatesh Murthy N S</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Projects
+            </a>
+            <h1>Sports Performance Analytics</h1>
+            <p class="subtitle">Real-time sports analytics platform improving team performance by 25%</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>2021 - 2022</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <span>Product Manager</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-industry"></i>
+                    <span>Sports Technology</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <div class="project-content">
+        <img src="../assets/project-3-detail-placeholder.jpg" alt="Sports Analytics Dashboard" class="project-image">
+        
+        <div class="content-section">
+            <h2>The Challenge</h2>
+            <p>Sports teams were struggling to make data-driven decisions in real-time during games and training sessions. Traditional analytics tools were either too complex for coaches to use effectively or too simplistic to provide meaningful insights. Teams needed a solution that could bridge the gap between raw performance data and actionable coaching decisions.</p>
+            
+            <p>The primary challenges included:</p>
+            <ul>
+                <li><strong>Data Overload:</strong> Coaches overwhelmed by vast amounts of performance data without clear insights</li>
+                <li><strong>Real-time Needs:</strong> Need for immediate feedback during games and training sessions</li>
+                <li><strong>User Complexity:</strong> Existing tools required technical expertise that most coaches lacked</li>
+                <li><strong>Integration Issues:</strong> Multiple data sources that didn't communicate with each other</li>
+                <li><strong>Actionable Insights:</strong> Data that was interesting but not actionable for improving performance</li>
+                <li><strong>Mobile Access:</strong> Need for coaches to access insights on the field and sidelines</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <strong>Key Insight:</strong> The most valuable analytics aren't the most complex—they're the ones that help coaches make better decisions in the moment.
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>The Solution</h2>
+            <p>I built a comprehensive sports analytics platform that transformed raw performance data into actionable insights for coaches and athletes. The platform focused on real-time analysis, intuitive visualization, and mobile-first design to meet the unique needs of sports environments.</p>
+            
+            <h3>Core Features</h3>
+            <ul>
+                <li><strong>Real-time Analytics:</strong> Live performance tracking and analysis during games and training</li>
+                <li><strong>Intelligent Dashboards:</strong> Customizable views for different roles (coaches, players, analysts)</li>
+                <li><strong>Predictive Insights:</strong> AI-powered predictions for player performance and injury risk</li>
+                <li><strong>Mobile-First Design:</strong> Full functionality on tablets and smartphones for field use</li>
+                <li><strong>Video Integration:</strong> Synchronized video analysis with performance metrics</li>
+                <li><strong>Team Communication:</strong> Built-in messaging and sharing capabilities</li>
+            </ul>
+            
+            <h3>Key Innovations</h3>
+            <ul>
+                <li><strong>Contextual Insights:</strong> Analytics that consider game situation, opponent strength, and player condition</li>
+                <li><strong>Simplified Visualizations:</strong> Complex data presented in intuitive, easy-to-understand formats</li>
+                <li><strong>Automated Alerts:</strong> Smart notifications for significant performance changes or risks</li>
+                <li><strong>Comparative Analysis:</strong> Easy comparison of players, teams, and performance over time</li>
+            </ul>
+            
+            <div class="tech-stack">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">WebSocket</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Docker</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>The Process</h2>
+            <h3>User Research & Discovery</h3>
+            <p>I conducted extensive research to understand sports analytics needs:</p>
+            <ul>
+                <li>Interviewed 40+ coaches across different sports and levels</li>
+                <li>Observed training sessions and games to understand workflow</li>
+                <li>Analyzed existing analytics tools and their limitations</li>
+                <li>Studied successful teams' data-driven approaches</li>
+            </ul>
+            
+            <h3>Product Strategy & Design</h3>
+            <p>Based on research, I developed a product strategy focused on:</p>
+            <ul>
+                <li><strong>Simplicity First:</strong> Complex analytics simplified for non-technical users</li>
+                <li><strong>Real-time Focus:</strong> Immediate insights for in-game decision making</li>
+                <li><strong>Mobile Priority:</strong> Designed for use in dynamic sports environments</li>
+                <li><strong>Actionable Insights:</strong> Every metric tied to specific coaching actions</li>
+            </ul>
+            
+            <h3>Development & Testing</h3>
+            <p>The development process included:</p>
+            <ul>
+                <li>Rapid prototyping and iterative testing with coaches</li>
+                <li>Performance optimization for real-time data processing</li>
+                <li>Extensive usability testing in actual sports environments</li>
+                <li>Integration testing with existing sports technology systems</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Results & Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">25%</span>
+                    <span class="stat-label">Improvement in Team Performance</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">80%</span>
+                    <span class="stat-label">Reduction in Decision Time</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">90%</span>
+                    <span class="stat-label">Coach Adoption Rate</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">60%</span>
+                    <span class="stat-label">Improvement in Player Development</span>
+                </div>
+            </div>
+            
+            <h3>Performance Impact</h3>
+            <ul>
+                <li><strong>Team Performance:</strong> 25% improvement in key performance metrics</li>
+                <li><strong>Decision Speed:</strong> 80% faster decision-making during games</li>
+                <li><strong>Player Development:</strong> 60% improvement in individual player growth</li>
+                <li><strong>Injury Prevention:</strong> 40% reduction in preventable injuries</li>
+            </ul>
+            
+            <h3>User Experience Impact</h3>
+            <ul>
+                <li><strong>Coach Satisfaction:</strong> 95% of coaches reported improved confidence in decisions</li>
+                <li><strong>Adoption Rate:</strong> 90% of teams adopted the platform within 3 months</li>
+                <li><strong>Training Efficiency:</strong> 50% more efficient training sessions</li>
+                <li><strong>Data Utilization:</strong> 300% increase in data-driven decision making</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <strong>Key Success Factor:</strong> The platform's success was driven by focusing on coach needs rather than technical capabilities, ensuring every feature served a clear purpose in improving team performance.
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Lessons Learned</h2>
+            <p>This project taught me valuable lessons about sports technology product management:</p>
+            <ul>
+                <li><strong>Context Matters:</strong> Sports environments are unique—solutions must work in dynamic, high-pressure situations</li>
+                <li><strong>Simplicity Wins:</strong> Complex analytics are useless if coaches can't understand and act on them</li>
+                <li><strong>Real-time is Critical:</strong> Historical analysis is valuable, but real-time insights drive immediate value</li>
+                <li><strong>Mobile-First Design:</strong> Sports technology must work on mobile devices in challenging conditions</li>
+                <li><strong>User Adoption is Key:</strong> The best analytics are worthless if coaches don't use them</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Venkatesh Murthy N S. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
